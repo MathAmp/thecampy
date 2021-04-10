@@ -116,7 +116,7 @@ class client:
 
         form = {
             'traineeMgrSeq' : soldier.soldier_code,
-            'sympathyLetterContent': message.content,
+            'sympathyLetterContent': utils.content_str_to_html_str(message.content),
             'sympathyLetterSubject': message.title,
             'boardDiv': 'sympathyLetter',
             'tempSaveYn': 'N',
